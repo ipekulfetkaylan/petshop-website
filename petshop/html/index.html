@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceddy PetShop</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/favicon.svg">
+
+    <!-- css-link -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- preload-img -->
+    <link rel="preload" as="image" href="../images/hero-banner.jpg">
+    <!-- Preload; sayfa kaynağına hangi ögeyi ilk önce yüklemesi gerektiğini söyler. Önemli kaynağın tarayıcı tarafından daha hızlı işleme alınmasını sağlar -->
+
+</head>
+<body id="top">
+    <!-- #header -->
+    <header class="header" data-header>
+        <div class="container">
+            <button class="nav-toggle-btn" data-nav-toggler>
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </button>
+
+            <a href="#" class="logo">Ceddy</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#shop" class="navbar-link"data-nav-link>Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#offers" class="navbar-link"data-nav-link>Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="navbar-link"data-nav-link>Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="navbar-link"data-nav-link>Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="navbar-action-btn">Log In</a>
+            </nav>
+            <div class="header-actions">
+                <button class="action-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="action-btn user">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="action-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="btn-badge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-- #hero -->
+            <section class="hero has-bg-image" id="home" style="background-image:url('../images/hero-banner.jpg') ;">
+                <div class="container">
+                    <h1 class="h1 hero-title">
+                        <span class="span">High Quality</span>Pet Food
+                    </h1>
+                    
+                    <p class="hero-text">Sale up to 40% off today</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            
+            
+            </section>
+
+            <!-- #category -->
+            <section class="section category" id="offers">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Top</span> categories 
+                    </h2>
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                                    <img src="../images/category-1.jpg" alt="" width="330" height="300" class="img-cover">
+                                </figure>
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Cat Food</a>
+                                  </h3>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                                    <img src="../images/category-2.jpg" alt="" width="330" height="300" class="img-cover">
+                                </figure>
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Cat Toys</a>
+                                  </h3>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                                    <img src="../images/category-3.jpg" alt="" width="330" height="300" class="img-cover">
+                                </figure>
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Dog Food</a>
+                                  </h3>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="category-card">
+                                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                                    <img src="../images/category-4.jpg" alt="" width="330" height="300" class="img-cover">
+                                </figure>
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Dog Sumpplements</a>
+                                  </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- #offers -->
+            <section class="section offer" id="blog">
+                <div class="container">
+                    <ul class="grid-list">
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="background-image: url('../images/offer-banner-1.jpg'); --width: 540; --height: 374;">
+                            <p class="card-subtitle">Selected Items. Online Only.</p>
+                            <h3 class="h3 card-title">
+                                Hot Summer <span class="span">Deals</span>
+                            </h3>
+                            <a href="#" class="btn">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="background-image: url('../images/offer-banner-2.jpg'); --width: 540; --height: 374;">
+                                <p class="card-subtitle">Treats & Grooming</p>
+                                <h3 class="h3 card-title">
+                                    Spoil your true <span class="span">love</span>
+                                </h3>
+                            <a href="#" class="btn">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="offer-card has-bg-image img-holder" style="background-image: url('../images/offer-banner-3.jpg'); --width: 540; --height: 374;">
+                            <p class="card-subtitle">Our Brand You Will Love</p>
+                            <h3 class="h3 card-title">
+                                New in this <span class="span">year</span>
+                            </h3>
+                            <a href="#" class="btn">Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- #product -->
+            <section class="section product" id="shop">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Best</span> Seller  
+                    </h2>
+                    <ul class="grid-list">
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder">
+                                    <img src="../images/product-1.jpg" class="img-cover default" width="360" height="360"></img>
+                                    <img src="../images/product-1_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(2)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Commodo leo sed porta</a>
+                                    </h3>
+                                    <data class="card-price" value="15">$15.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-2.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-2_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(5)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Purus consequat congue sit</a>
+                                    </h3>
+                                    <data class="card-price" value="45">$45.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-3.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-3_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(33)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                                    </h3>
+                                    <data class="card-price" value="45">$45.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-4.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-4_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(7)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                                    </h3>
+                                    <data class="card-price" value="49">$49.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-5.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-5_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(4)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                                    </h3>
+                                    <data class="card-price" value="85">$85.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-6.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-6_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper gray">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(0)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Nam justo libero porta ege</a>
+                                    </h3>
+                                    <data class="card-price" value="85">$85.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-7.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-7_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper gray">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(0)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Numoreo justo libero porta ege</a>
+                                    </h3>
+                                    <data class="card-price" value="90">$90.00</data>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card">
+                                <div class="card-banner img-holder"style="--width: 360; --height: 360;">
+                                    <img src="../images/product-8.jpg" class="img-cover default"width="360" height="360"></img>
+                                    <img src="../images/product-8_0.jpg" alt="" class="img-cover hover" width="360" height="360">
+                                    <button class="card-action-btn" title="Add To Card">
+                                        <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                                    </button>
+                                </div>
+                                <div class="card-content">
+                                    <div class="wrapper">
+                                        <div class="rating-wrapper ">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>  
+                                        </div>
+                                        <span class="span">(122)</span>
+                                    </div>
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Etiam commodo leo sed</a>
+                                    </h3>
+                                    <data class="card-price" value="55">$55.00</data>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- #service -->
+            <section class="section service">
+                <div class="container">
+                    <img src="../images/service-image.png" alt="" class="img" width="122" height="136">
+                    <h2 class="h2 section-title">
+                        <span class="span">What your pet needs,</span> when they need it.
+                    </h2>
+                    <ul class="grid-list">
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="../images/service-icon-1.png" alt="" width="70" height="70" >
+                                </figure>
+                                <h3 class="h3 card-title">Free Same-Day Delivery</h3>
+                                <p class="card-text">
+                                    Order by 2pm local time to get free delivery on orders $35+ today.
+                                  </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="../images/service-icon-2.png" alt="" width="70" height="70" >
+                                </figure>
+                                <h3 class="h3 card-title">30 Day Return</h3>
+                                <p class="card-text">
+                                    35% off your first order plus 5% off all future orders.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="../images/service-icon-3.png" alt="" width="70" height="70" >
+                                </figure>
+                                <h3 class="h3 card-title">Security payment</h3>
+                                <p class="card-text">
+                                    25% off your online order of $50+. Available at most locations.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-icon">
+                                    <img src="../images/service-icon-4.png" alt="" width="70" height="70" >
+                                </figure>
+                                <h3 class="h3 card-title">24/7 Support</h3>
+                                <p class="card-text">
+                                    Shop online to get orders over $35 shipped fast and free.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- #cta -->
+            <section class=" cta has-bg-img" style="background-image:url('../images/cta-bg.jpg')">
+            <div class="container">
+                <figure class="cta-banner">
+                    <img src="../images/cta-banner.png" alt="" class="w-100" width="900" height="660" >
+                </figure>
+                <div class="cta-content">
+                    <img src="../images/cta-icon.png" alt="" class="img" width="120" height="35" >
+                    <h2 class="h2 section-title">Taste it, love it or we’ll replace it… Guaranteed!</h2>
+                    <p class="section-text">
+                        At Petio, we believe your dog and cat will love their food so much that if they don’t … we’ll help you
+                        find a
+                        replacement. That’s our taste guarantee.
+                      </p>
+          
+                      <a href="#" class="btn">Find out more</a>
+                </div>
+            </div>
+            </section>
+
+            <!-- #brand -->
+            <section class="section brand">
+                <div class="container">
+                    <h2 class="h2 section-title">
+                        <span class="span">Popular</span> Brands   
+                    </h2>
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="brand-card img-holder">
+                            <img src="../images/brand-1.jpg" width="150" height="150" alt="" class="img-cover">
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="brand-card img-holder">
+                            <img src="../images/brand-2.jpg" width="150" height="150" alt="" class="img-cover">
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="brand-card img-holder">
+                            <img src="../images/brand-3.jpg" width="150" height="150" alt="" class="img-cover">
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="brand-card img-holder" >
+                            <img src="../images/brand-4.jpg" width="150" height="150" alt="" class="img-cover">
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="brand-card img-holder">
+                            <img src="../images/brand-5.jpg" width="150" height="150" alt="" class="img-cover">
+                            </div>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+      <!-- #footer -->
+      <footer class="footer" style="background-image:url('../images/footer-bg.jpg')">
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                        <a href="#" class="logo">Ceddy</a>  
+                        <p class="footer-text">
+                          İf you have any question, please contact us!
+                        </p>
+                    <ul class="contact-list" id="footer">
+                        <li class="contact-item">
+                            <i class="fa-solid fa-envelope contact-item"></i>
+                            <a href="mailto:support@gmail.com"
+                            class="contact-link">support@gmail.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <address class="address">
+                                30 ABD Albuquerque, NM 87120 35.153124, -106.711747
+                            </address>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+16234567891011" class="contact-link">(+1)-6234-56-789-1011</a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link"><i class="fa-brands fa-pinterest"></i></i></a>
+                            </li>
+                    </ul>
+                </div>
+                      <ul class="footer-list">
+                        
+                        <li>
+                            <p class="footer-list-title">Corporate</p>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Careers</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">FAQs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Vendors</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer-link">Affiliate Program</a>
+                        </li>
+                      </ul>
+                      <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Information</p>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Online Store</a>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Refund Policy</a>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Shipping Policy</a>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Terms of Service</a>
+                          </li>
+                
+                          <li>
+                            <a href="#" class="footer-link">Track Order</a>
+                          </li> 
+                      </ul>
+                      <ul class="footer-list">
+
+                        <li>
+                          <p class="footer-list-title">Services</p>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Grooming</a>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Positive Dog Training</a>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Veterinary Services</a>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Petco Insurance</a>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Pet Adoption</a>
+                        </li>
+              
+                        <li>
+                          <a href="#" class="footer-link">Resource Center</a>
+                        </li>
+              
+                      </ul>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <img src="../images/payment.png" alt="" width="397" height="32" class="img">
+                    <p class="copyright">
+                        &copy; 2022 || All right reserved.
+                    </p>
+                </div>
+            </div>
+    </footer>
+
+    <!-- #back to top -->
+    <a href="#top" class="back-top-btn" data-back-top-btn>
+        <i class="fa-sharp fa-solid fa-circle-up"></i>
+    </a>
+
+    
+
+
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
